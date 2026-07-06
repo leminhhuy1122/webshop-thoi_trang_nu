@@ -34,6 +34,7 @@ export function ProductCard({ product, viewMode = 'grid' }: ProductCardProps) {
           <img 
             src={product.image} 
             alt={product.name} 
+            referrerPolicy="no-referrer"
             className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
           />
           {product.isNew && (
@@ -97,6 +98,7 @@ export function ProductCard({ product, viewMode = 'grid' }: ProductCardProps) {
         <img 
           src={product.image} 
           alt={product.name} 
+          referrerPolicy="no-referrer"
           className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
         />
         {product.isNew && (

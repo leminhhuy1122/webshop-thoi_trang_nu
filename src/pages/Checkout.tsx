@@ -215,7 +215,7 @@ export function Checkout() {
             {cartItems.map((item, idx) => (
               <div key={idx} className="flex gap-4">
                 <div className="w-16 h-20 bg-white rounded-lg overflow-hidden flex-shrink-0 border border-black/5 relative">
-                  <img src={item.product.image} alt={item.product.name} className="w-full h-full object-cover" />
+                  <img src={item.product.image} alt={item.product.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   <span className="absolute top-0 right-0 w-4 h-4 bg-black text-white rounded-bl-lg flex items-center justify-center text-[8px] font-bold">
                     {item.quantity}
                   </span>

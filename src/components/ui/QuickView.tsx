@@ -33,7 +33,7 @@ export function QuickView() {
 
         {/* Image */}
         <div className="w-full md:w-1/2 h-64 md:h-[600px] bg-[#F3F2F0]">
-          <img src={quickViewProduct.image} alt={quickViewProduct.name} className="w-full h-full object-cover" />
+          <img src={quickViewProduct.image} alt={quickViewProduct.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
         </div>
 
         {/* Info */}

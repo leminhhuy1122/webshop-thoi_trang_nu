@@ -108,7 +108,7 @@ export function ProductDetail() {
                 onClick={() => setMainImage(img)}
                 className={`flex-shrink-0 w-20 h-24 lg:w-full lg:h-32 rounded-xl overflow-hidden border-2 transition-all ${mainImage === img ? 'border-black' : 'border-transparent hover:border-black/20'}`}
               >
-                <img src={img} alt={`Thumb ${idx}`} className="w-full h-full object-cover" />
+                <img src={img} alt={`Thumb ${idx}`} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
               </button>
             ))}
           </div>
@@ -125,6 +125,7 @@ export function ProductDetail() {
             <img 
               src={mainImage} 
               alt={product.name} 
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-150"
             />
             {product.isNew && (

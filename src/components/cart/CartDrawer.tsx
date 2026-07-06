@@ -53,7 +53,7 @@ export function CartDrawer() {
               {cartItems.map((item) => (
                 <div key={item.cartItemId} className="flex gap-4 group">
                   <div className="w-24 h-32 bg-[#F3F2F0] rounded-xl overflow-hidden flex-shrink-0 relative">
-                    <img src={item.product.image} alt={item.product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={item.product.image} alt={item.product.name} referrerPolicy="no-referrer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="flex flex-col flex-1 py-1">
                     <div className="flex justify-between items-start mb-1">
