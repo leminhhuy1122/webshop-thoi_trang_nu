@@ -198,6 +198,7 @@ export const useStore = create<AppState>((set, get) => ({
   },
 
   fetchInitialData: async () => {
+    set({ isGlobalLoading: true });
     try {
       const [productsRes, categoriesRes, ordersRes] = await Promise.all([
         fetch('/api/products'),
@@ -212,6 +213,8 @@ export const useStore = create<AppState>((set, get) => ({
       set({ products, categories, orders });
     } catch (error) {
       console.error('Lỗi khi tải dữ liệu ban đầu:', error);
+    } finally {
+      set({ isGlobalLoading: false });
     }
   },
 

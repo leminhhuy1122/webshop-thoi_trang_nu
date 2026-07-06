@@ -44,23 +44,9 @@ function AdminRoute({ children }: { children: React.ReactNode }) {
 const LoadingFallback = () => <PageLoader />;
 
 function RouteChangeListener() {
-  const location = useLocation();
   const { isGlobalLoading } = useStore();
-  const [isNavigating, setIsNavigating] = useState(false);
-  const prevLoc = React.useRef(location.pathname);
 
-  useEffect(() => {
-    if (prevLoc.current !== location.pathname) {
-      setIsNavigating(true);
-      prevLoc.current = location.pathname;
-      const timer = setTimeout(() => {
-        setIsNavigating(false);
-      }, 1200);
-      return () => clearTimeout(timer);
-    }
-  }, [location.pathname]);
-
-  if (isGlobalLoading || isNavigating) {
+  if (isGlobalLoading) {
     return <PageLoader />;
   }
   return null;
