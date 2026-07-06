@@ -427,8 +427,14 @@ export function Home() {
 
       {/* Welcome Voucher Popup */}
       {showVoucherPopup && welcomeVoucher && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-in fade-in duration-500">
-          <div className="relative bg-[#FAF9F6] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl animate-in zoom-in-95 duration-500">
+        <div 
+          onClick={handleCloseVoucher}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-in fade-in duration-500 cursor-pointer"
+        >
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-[#FAF9F6] w-full max-w-md rounded-3xl overflow-hidden shadow-2xl animate-in zoom-in-95 duration-500 cursor-default"
+          >
             <button 
               onClick={handleCloseVoucher}
               className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-black/5 hover:bg-black/10 transition-colors"
