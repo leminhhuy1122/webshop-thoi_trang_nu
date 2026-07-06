@@ -80,6 +80,69 @@ export const products = [
     isNew: true,
     sold: 25,
     stock: 15
+  },
+  {
+    id: '9',
+    name: 'Chân Váy Chữ A Aura',
+    price: 480000,
+    salePrice: 350000,
+    image: 'https://images.unsplash.com/photo-1583496661160-fb48862c484f?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: true,
+    sold: 14,
+    stock: 12
+  },
+  {
+    id: '10',
+    name: 'Áo Blazer Linen Cổ Điển',
+    price: 1100000,
+    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo khoác',
+    isNew: false,
+    sold: 9,
+    stock: 10
+  },
+  {
+    id: '11',
+    name: 'Đầm Dạ Hội Lụa Satin',
+    price: 1850000,
+    salePrice: 1390000,
+    image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: true,
+    sold: 3,
+    stock: 5
+  },
+  {
+    id: '12',
+    name: 'Quần Tây Ống Suông Aura',
+    price: 680000,
+    image: 'https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?q=80&w=1000&auto=format&fit=crop',
+    category: 'Quần',
+    isNew: false,
+    sold: 34,
+    stock: 15
+  },
+  {
+    id: '13',
+    name: 'Áo Thun Cotton Organic',
+    price: 320000,
+    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo',
+    isNew: false,
+    sold: 89,
+    stock: 30
+  },
+  {
+    id: '14',
+    name: 'Giày Cao Gót Mũi Nhọn Suede',
+    price: 980000,
+    salePrice: 790000,
+    image: 'https://images.unsplash.com/photo-1596609548086-85bbf8ddb6b9?q=80&w=1000&auto=format&fit=crop',
+    category: 'Giày',
+    isNew: true,
+    sold: 12,
+    stock: 10
   }
 ];
 
