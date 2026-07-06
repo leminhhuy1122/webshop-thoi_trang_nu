@@ -89,7 +89,10 @@ export function ProductCard({ product, viewMode = 'grid' }: ProductCardProps) {
 
   return (
     <div className="group flex flex-col relative h-full">
-      <Link to={`/product/${product.id}`} className="absolute inset-0 z-0"></Link>
+      <div 
+        onClick={() => setQuickViewProduct(product)} 
+        className="absolute inset-0 z-10 cursor-pointer"
+      />
       <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#F3F2F0] rounded-2xl mb-3 cursor-pointer">
         <img 
           src={product.image} 
@@ -137,7 +140,7 @@ export function ProductCard({ product, viewMode = 'grid' }: ProductCardProps) {
           {/* Mobile Quick Add Button (Bottom Right) */}
           <button 
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); addToCart(product); }}
-            className="md:hidden w-11 h-11 flex-shrink-0 bg-black text-white rounded-full flex items-center justify-center shadow-lg active:scale-95 pointer-events-auto"
+            className="md:hidden w-11 h-11 flex-shrink-0 bg-black text-white rounded-full flex items-center justify-center shadow-lg active:scale-95 pointer-events-auto z-20"
             aria-label="Thêm vào giỏ"
           >
             <ShoppingBag className="w-5 h-5" />
