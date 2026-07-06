@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { io, Socket } from 'socket.io-client';
+import { products as mockProducts, categories as mockCategories } from '../data/mockData';
 
 export interface Toast {
   id: string;
@@ -206,13 +207,21 @@ export const useStore = create<AppState>((set, get) => ({
         fetch('/api/orders')
       ]);
 
-      const products = productsRes.ok ? await productsRes.json() : [];
-      const categories = categoriesRes.ok ? await categoriesRes.json() : [];
+      let products = productsRes.ok ? await productsRes.json() : [];
+      let categories = categoriesRes.ok ? await categoriesRes.json() : [];
       const orders = ordersRes.ok ? await ordersRes.json() : [];
+
+      if (!products || products.length === 0) {
+        products = mockProducts;
+      }
+      if (!categories || categories.length === 0) {
+        categories = mockCategories;
+      }
 
       set({ products, categories, orders });
     } catch (error) {
-      console.error('Lỗi khi tải dữ liệu ban đầu:', error);
+      console.error('Lỗi khi tải dữ liệu ban đầu, sử dụng dữ liệu mặc định:', error);
+      set({ products: mockProducts, categories: mockCategories });
     } finally {
       set({ isGlobalLoading: false });
     }

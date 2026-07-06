@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 // API Routes
-app.use("/api/products", productRoutes);
-app.use("/api/categories", categoryRoutes);
-app.use("/api/orders", orderRoutes);
+app.use(["/api/products", "/products"], productRoutes);
+app.use(["/api/categories", "/categories"], categoryRoutes);
+app.use(["/api/orders", "/orders"], orderRoutes);
 
 export default app;
