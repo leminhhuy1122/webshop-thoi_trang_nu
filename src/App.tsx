@@ -41,7 +41,7 @@ function AdminRoute({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
-const LoadingFallback = () => <PageLoader />;
+const LoadingFallback = () => null;
 
 function RouteChangeListener() {
   const { isGlobalLoading } = useStore();
