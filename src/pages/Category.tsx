@@ -19,7 +19,7 @@ export function Category() {
 
   // Pagination
   const [page, setPage] = useState(1);
-  const ITEMS_PER_PAGE = 10;
+  const ITEMS_PER_PAGE = 20;
 
   // Reset page when filters change
   useEffect(() => {
