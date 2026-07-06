@@ -4,7 +4,7 @@ export const products = [
     name: 'Váy Lụa Midnight',
     price: 1450000,
     salePrice: 890000,
-    image: 'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1974&auto=format&fit=crop',
+    image: 'https://i.pinimg.com/736x/1f/80/65/1f80650360c651413d43bcc7eb618c03.jpg',
     category: 'Váy',
     isNew: false,
     sold: 42,
