@@ -185,6 +185,160 @@ export const products = [
     isNew: false,
     sold: 21,
     stock: 40
+  },
+  {
+    id: '19',
+    name: 'Áo Sơ Mi Linen Cổ Trụ',
+    price: 450000,
+    image: 'https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo',
+    isNew: true,
+    sold: 10,
+    stock: 40
+  },
+  {
+    id: '20',
+    name: 'Đầm Voan Hoa Nhí Aura',
+    price: 890000,
+    salePrice: 690000,
+    image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: true,
+    sold: 15,
+    stock: 30
+  },
+  {
+    id: '21',
+    name: 'Quần Jeans Nữ Ôm Cạp Cao',
+    price: 650000,
+    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1000&auto=format&fit=crop',
+    category: 'Quần',
+    isNew: false,
+    sold: 12,
+    stock: 35
+  },
+  {
+    id: '22',
+    name: 'Áo Khoác Phao Ấm Áp',
+    price: 1800000,
+    salePrice: 1450000,
+    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo khoác',
+    isNew: false,
+    sold: 8,
+    stock: 20
+  },
+  {
+    id: '23',
+    name: 'Mũ Cói Thắt Nơ Điệu Đà',
+    price: 290000,
+    image: 'https://images.unsplash.com/photo-1572420144376-3be83bb40ab6?q=80&w=1000&auto=format&fit=crop',
+    category: 'Phụ kiện',
+    isNew: true,
+    sold: 18,
+    stock: 25
+  },
+  {
+    id: '24',
+    name: 'Giày Cao Gót Quai Hậu',
+    price: 850000,
+    image: 'https://images.unsplash.com/photo-1562273138-f46be4ebdf33?q=80&w=1000&auto=format&fit=crop',
+    category: 'Giày',
+    isNew: false,
+    sold: 22,
+    stock: 35
+  },
+  {
+    id: '25',
+    name: 'Áo Blazer Phom Lửng',
+    price: 820000,
+    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo khoác',
+    isNew: true,
+    sold: 7,
+    stock: 20
+  },
+  {
+    id: '26',
+    name: 'Đầm Bodycon Thun Gân',
+    price: 750000,
+    salePrice: 550000,
+    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: false,
+    sold: 14,
+    stock: 20
+  },
+  {
+    id: '27',
+    name: 'Chân Váy Denim Cá Tính',
+    price: 520000,
+    image: 'https://images.unsplash.com/photo-1583496661160-fb48862c484f?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: false,
+    sold: 19,
+    stock: 27
+  },
+  {
+    id: '28',
+    name: 'Áo Hoodie Nỉ Bông In Chữ',
+    price: 680000,
+    image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1000&auto=format&fit=crop',
+    category: 'Áo khoác',
+    isNew: false,
+    sold: 25,
+    stock: 40
+  },
+  {
+    id: '29',
+    name: 'Quần Short Lửng Kaki',
+    price: 350000,
+    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1000&auto=format&fit=crop',
+    category: 'Quần',
+    isNew: false,
+    sold: 16,
+    stock: 30
+  },
+  {
+    id: '30',
+    name: 'Đầm Suông Linen Thêu Hoa',
+    price: 950000,
+    salePrice: 750000,
+    image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop',
+    category: 'Váy',
+    isNew: true,
+    sold: 9,
+    stock: 25
+  },
+  {
+    id: '31',
+    name: 'Túi Đeo Chéo Mini Da Mềm',
+    price: 390000,
+    image: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1000&auto=format&fit=crop',
+    category: 'Phụ kiện',
+    isNew: false,
+    sold: 11,
+    stock: 20
+  },
+  {
+    id: '32',
+    name: 'Kính Mát Phi Công Gọng Mảnh',
+    price: 520000,
+    image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1000&auto=format&fit=crop',
+    category: 'Phụ kiện',
+    isNew: true,
+    sold: 5,
+    stock: 15
+  },
+  {
+    id: '33',
+    name: 'Giày Búp Bê Thắt Nơ Đen',
+    price: 650000,
+    image: 'https://images.unsplash.com/photo-1596609548086-85bbf8ddb6b9?q=80&w=1000&auto=format&fit=crop',
+    category: 'Giày',
+    isNew: false,
+    sold: 15,
+    stock: 35
   }
 ];
 
