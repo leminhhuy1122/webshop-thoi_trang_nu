@@ -282,7 +282,7 @@ export function Home() {
         {/* Featured Category 1 */}
         <Link to="/category" className="col-span-1 rounded-[32px] bg-[#E8CFCF] p-8 flex flex-col items-start justify-end group cursor-pointer min-h-[320px] relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-700">
-             <img src="https://images.unsplash.com/photo-1599643478514-4a820c56a820?q=80&w=2000&auto=format&fit=crop" className="w-full h-full object-cover mix-blend-multiply" />
+             <img src="/hero_paner.jpg" className="w-full h-full object-cover mix-blend-multiply" />
           </div>
           <div className="absolute top-8 right-8 w-12 h-12 bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-white transition-all duration-300 z-10 shadow-sm">
             <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -399,8 +399,8 @@ export function Home() {
       </section>
 
       {/* Editor's Pick Banner */}
-      <section className="bg-[#E8CFCF] rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 relative overflow-hidden group">
-        <div className="relative z-10 w-full md:w-1/2 flex flex-col items-start text-[#1A1A1A]">
+      <section className="bg-[#E8CFCF] rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20 relative overflow-hidden group">
+        <div className="relative z-10 w-full md:w-[40%] flex flex-col items-start text-[#1A1A1A] max-w-md">
           <span className="bg-white text-black text-[10px] font-bold uppercase tracking-[0.3em] px-4 py-2 rounded-full mb-6 shadow-sm">
             Editor's Pick
           </span>
@@ -414,10 +414,10 @@ export function Home() {
             Xem Bộ Sưu Tập
           </Link>
         </div>
-        <div className="w-full md:w-1/2 h-[300px] md:h-[450px] relative z-10">
+        <div className="w-full md:w-[55%] h-[350px] md:h-[500px] relative z-10">
           <div className="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-2xl md:rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
           <img 
-            src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=2000&auto=format&fit=crop" 
+            src="/paner_section.png" 
             alt="Editor's Pick" 
             className="absolute inset-0 w-full h-full object-cover rounded-2xl md:rounded-3xl shadow-2xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"
           />
