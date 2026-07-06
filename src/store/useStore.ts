@@ -130,7 +130,7 @@ export const useStore = create<AppState>((set, get) => ({
       id: '3', 
       title: 'TỐI GIẢN TỪNG<br/>CHI TIẾT', 
       subtitle: 'PHỤ KIỆN CAO CẤP', 
-      image: 'public/hero_4.jpg', 
+      image: '/hero_4.jpg', 
       link: '/category',
       status: 'active',
       textColor: 'dark',
