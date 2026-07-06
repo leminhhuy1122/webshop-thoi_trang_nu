@@ -17,36 +17,14 @@ export function Category() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
-  // Pagination / Infinite Scroll
+  // Pagination
   const [page, setPage] = useState(1);
   const ITEMS_PER_PAGE = 10;
-  const observerTarget = useRef<HTMLDivElement>(null);
 
   // Reset page when filters change
   useEffect(() => {
     setPage(1);
   }, [selectedCategory, priceRange, selectedColor, selectedSize, sortBy]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        if (entries[0].isIntersecting) {
-          setPage(prev => prev + 1);
-        }
-      },
-      { threshold: 1.0 }
-    );
-    
-    if (observerTarget.current) {
-      observer.observe(observerTarget.current);
-    }
-    
-    return () => {
-      if (observerTarget.current) {
-        observer.unobserve(observerTarget.current);
-      }
-    };
-  }, [observerTarget]);
 
   // Quick mobile filter toggle
   useEffect(() => {
@@ -307,7 +285,7 @@ export function Category() {
             : "flex flex-col gap-6"
           }>
             {filteredProducts.length > 0 ? (
-              filteredProducts.slice(0, page * ITEMS_PER_PAGE).map((product) => (
+              filteredProducts.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE).map((product) => (
                 <ProductCard key={product.id} product={product} viewMode={viewMode} />
               ))
             ) : (
@@ -320,16 +298,52 @@ export function Category() {
             )}
           </div>
 
-          {/* Infinite Scroll Observer Target */}
-          {filteredProducts.length > 0 && page * ITEMS_PER_PAGE < filteredProducts.length && (
-            <div ref={observerTarget} className="w-full flex justify-center py-10">
-              <Loader2 className="w-6 h-6 animate-spin text-black/40" />
-            </div>
-          )}
-          
-          {filteredProducts.length > 0 && page * ITEMS_PER_PAGE >= filteredProducts.length && (
-            <div className="w-full text-center py-10">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-black/40">Bạn đã xem hết sản phẩm</p>
+          {/* Classic Pagination Controls */}
+          {filteredProducts.length > ITEMS_PER_PAGE && (
+            <div className="flex items-center justify-center gap-2 mt-12 py-6 border-t border-black/5">
+              <button
+                onClick={() => {
+                  if (page > 1) {
+                    setPage(page - 1);
+                    window.scrollTo({ top: 380, behavior: 'smooth' });
+                  }
+                }}
+                disabled={page === 1}
+                className="px-4 py-2 rounded-full border border-black/10 text-xs font-bold uppercase tracking-wider hover:border-black disabled:opacity-30 disabled:hover:border-black/10 transition-colors cursor-pointer"
+              >
+                Trước
+              </button>
+              
+              {Array.from({ length: Math.ceil(filteredProducts.length / ITEMS_PER_PAGE) }, (_, idx) => idx + 1).map((pNum) => (
+                <button
+                  key={pNum}
+                  onClick={() => {
+                    setPage(pNum);
+                    window.scrollTo({ top: 380, behavior: 'smooth' });
+                  }}
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer ${
+                    page === pNum 
+                      ? 'bg-black text-white' 
+                      : 'border border-black/10 text-black/60 hover:border-black hover:text-black'
+                  }`}
+                >
+                  {pNum}
+                </button>
+              ))}
+
+              <button
+                onClick={() => {
+                  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+                  if (page < totalPages) {
+                    setPage(page + 1);
+                    window.scrollTo({ top: 380, behavior: 'smooth' });
+                  }
+                }}
+                disabled={page === Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)}
+                className="px-4 py-2 rounded-full border border-black/10 text-xs font-bold uppercase tracking-wider hover:border-black disabled:opacity-30 disabled:hover:border-black/10 transition-colors cursor-pointer"
+              >
+                Sau
+              </button>
             </div>
           )}
 
