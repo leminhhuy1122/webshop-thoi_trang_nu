@@ -1,0 +1,237 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Váy Lụa Midnight",
+    "description": "Đầm thiết kế dáng suông thanh lịch bằng chất liệu lụa satin cao cấp.",
+    "price": 1450000,
+    "salePrice": 890000,
+    "image": "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1974&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1974&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-1",
+    "category": {
+      "id": "cat-1",
+      "name": "Váy"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Đen",
+      "Đỏ"
+    ],
+    "stock": 7,
+    "materials": [
+      "Lụa",
+      "Satin"
+    ],
+    "careInstructions": "Giặt tay bằng nước lạnh, không dùng hóa chất tẩy.",
+    "tags": [
+      "váy",
+      "lụa",
+      "midnight"
+    ],
+    "isNew": false,
+    "rating": 4.8,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  },
+  {
+    "id": "prod-2",
+    "name": "Blazer Linen Trắng",
+    "description": "Áo khoác blazer Linen phom đứng trẻ trung, thấm hút mồ hôi tốt.",
+    "price": 1200000,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=2000&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=2000&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-4",
+    "category": {
+      "id": "cat-4",
+      "name": "Áo khoác"
+    },
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Trắng",
+      "Be"
+    ],
+    "stock": 19,
+    "materials": [
+      "Linen"
+    ],
+    "careInstructions": "Giặt hấp hoặc giặt nhẹ, là ủi ở nhiệt độ thấp.",
+    "tags": [
+      "áo khoác",
+      "blazer",
+      "linen"
+    ],
+    "isNew": true,
+    "rating": 5,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  },
+  {
+    "id": "prod-3",
+    "name": "Áo Sơ Mi Lụa",
+    "description": "Sơ mi nữ kiểu lụa mềm mượt, phom dáng chuẩn công sở thanh lịch.",
+    "price": 850000,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1974&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1974&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-2",
+    "category": {
+      "id": "cat-2",
+      "name": "Áo"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Trắng",
+      "Be",
+      "Đen"
+    ],
+    "stock": 10,
+    "materials": [
+      "Lụa"
+    ],
+    "careInstructions": "Giặt tay bằng dầu gội hoặc nước giặt nhẹ.",
+    "tags": [
+      "áo",
+      "sơ mi",
+      "lụa"
+    ],
+    "isNew": true,
+    "rating": 4.5,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  },
+  {
+    "id": "prod-4",
+    "name": "Quần Ống Rộng Thanh Lịch",
+    "description": "Quần tây ống rộng cạp cao tôn dáng tôn chân, chất tuyết mưa đứng dáng.",
+    "price": 950000,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1974&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1974&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-3",
+    "category": {
+      "id": "cat-3",
+      "name": "Quần"
+    },
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Be",
+      "Đen"
+    ],
+    "stock": 34,
+    "materials": [
+      "Tuyết mưa"
+    ],
+    "careInstructions": "Giặt máy bình thường với túi giặt.",
+    "tags": [
+      "quần",
+      "ống rộng",
+      "công sở"
+    ],
+    "isNew": false,
+    "rating": 4.7,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  },
+  {
+    "id": "prod-5",
+    "name": "Đầm Dạ Hội Cổ Điển",
+    "description": "Thiết kế xẻ đùi đính đá sang trọng dành cho các sự kiện đặc biệt.",
+    "price": 2500000,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1566160984624-9b2de2687f49?q=80&w=2070&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1566160984624-9b2de2687f49?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-1",
+    "category": {
+      "id": "cat-1",
+      "name": "Váy"
+    },
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "colors": [
+      "Đen",
+      "Đỏ"
+    ],
+    "stock": 4,
+    "materials": [
+      "Nhung",
+      "Voan"
+    ],
+    "careInstructions": "Khuyến khích giặt khô để giữ hạt đính đá.",
+    "tags": [
+      "váy",
+      "dạ hội",
+      "sang trọng"
+    ],
+    "isNew": true,
+    "rating": 4.9,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  },
+  {
+    "id": "prod-6",
+    "name": "Túi Xách Da Minimalist",
+    "description": "Chất liệu da bò thật mềm mại, phom dáng tối giản hiện đại sang trọng.",
+    "price": 1800000,
+    "salePrice": 1500000,
+    "image": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop"
+    ],
+    "categoryId": "cat-5",
+    "category": {
+      "id": "cat-5",
+      "name": "Phụ kiện"
+    },
+    "sizes": [
+      "Freesize"
+    ],
+    "colors": [
+      "Be",
+      "Đen"
+    ],
+    "stock": 9,
+    "materials": [
+      "Da bò"
+    ],
+    "careInstructions": "Dùng khăn ẩm lau sạch, tránh ngâm nước.",
+    "tags": [
+      "phụ kiện",
+      "túi xách",
+      "da"
+    ],
+    "isNew": false,
+    "rating": 4.6,
+    "createdAt": "2026-07-07T06:00:00.000Z",
+    "updatedAt": "2026-07-07T06:00:00.000Z"
+  }
+]

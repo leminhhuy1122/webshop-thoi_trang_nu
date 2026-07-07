@@ -1,0 +1,91 @@
+[
+  {
+    "userId": "user-1783410457984",
+    "subtotal": 850000,
+    "shippingFee": 30000,
+    "discountAmount": 0,
+    "finalTotal": 880000,
+    "voucherCode": null,
+    "paymentMethod": "MOMO",
+    "shippingAddress": "123, Nha trang",
+    "recipientName": "Huy",
+    "recipientPhone": "0987653801",
+    "recipientEmail": "huy@gmail.com",
+    "notes": "123456",
+    "items": [
+      {
+        "productId": "prod-3",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 850000
+      }
+    ],
+    "id": "ord-1783410483659",
+    "status": "PENDING_PAYMENT",
+    "createdAt": "2026-07-07T07:48:03.659Z",
+    "updatedAt": "2026-07-07T07:48:03.659Z"
+  },
+  {
+    "userId": "cust-1",
+    "subtotal": 7890000,
+    "shippingFee": 30000,
+    "discountAmount": 0,
+    "finalTotal": 7920000,
+    "voucherCode": null,
+    "paymentMethod": "COD",
+    "shippingAddress": "123abc, nha trang",
+    "recipientName": "Khách hàng Aura (Demo)",
+    "recipientPhone": "0987654321",
+    "recipientEmail": "customer@demo.com",
+    "notes": "abcđ",
+    "items": [
+      {
+        "productId": "prod-2",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 1200000
+      },
+      {
+        "productId": "prod-1",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 890000
+      },
+      {
+        "productId": "prod-3",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 850000
+      },
+      {
+        "productId": "prod-4",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 950000
+      },
+      {
+        "productId": "prod-5",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 2500000
+      },
+      {
+        "productId": "prod-6",
+        "quantity": 1,
+        "size": "M",
+        "color": "Đen",
+        "price": 1500000
+      }
+    ],
+    "id": "ord-1783411312651",
+    "status": "PENDING_PAYMENT",
+    "createdAt": "2026-07-07T08:01:52.652Z",
+    "updatedAt": "2026-07-07T08:01:52.652Z"
+  }
+]

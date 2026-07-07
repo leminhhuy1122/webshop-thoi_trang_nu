@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import productRoutes from "../src/server/routes/productRoutes";
-import categoryRoutes from "../src/server/routes/categoryRoutes";
-import orderRoutes from "../src/server/routes/orderRoutes";
+import productRoutes from "../backend/src/server/routes/productRoutes";
+import categoryRoutes from "../backend/src/server/routes/categoryRoutes";
+import orderRoutes from "../backend/src/server/routes/orderRoutes";
 
 const app = express();
 

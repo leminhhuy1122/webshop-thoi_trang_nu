@@ -1,0 +1,5 @@
+[
+  { "id": "v-1", "code": "AURA100K", "type": "FIXED", "value": 100000, "minOrder": 500000, "usageLimit": 100, "usedCount": 0, "status": "active", "expiresAt": "2026-12-31T23:59:59.000Z", "isWelcome": false },
+  { "id": "v-2", "code": "FREESHIP", "type": "FREESHIP", "value": 30000, "minOrder": 0, "usageLimit": 500, "usedCount": 0, "status": "active", "expiresAt": "2026-12-31T23:59:59.000Z", "isWelcome": false },
+  { "id": "v-3", "code": "NEWBIE10", "type": "PERCENT", "value": 10, "minOrder: ": 300000, "usageLimit": 1000, "usedCount": 0, "status": "active", "expiresAt": "2026-12-31T23:59:59.000Z", "isWelcome": true }
+]

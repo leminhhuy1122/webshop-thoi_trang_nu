@@ -1,0 +1,25 @@
+[
+  {
+    "id": "admin-1",
+    "name": "Aura Admin (Demo)",
+    "email": "admin@demo.com",
+    "role": "ADMIN",
+    "points": 50000,
+    "totalSpent": 25000000
+  },
+  {
+    "id": "cust-1",
+    "name": "Khách hàng Aura (Demo)",
+    "email": "customer@demo.com",
+    "role": "CUSTOMER",
+    "points": 15000,
+    "totalSpent": 5000000
+  },
+  {
+    "id": "user-1783410928244",
+    "name": "Huy",
+    "email": "huy@gmail.com",
+    "role": "CUSTOMER",
+    "createdAt": "2026-07-07T07:55:28.244Z"
+  }
+]
